@@ -1,0 +1,22 @@
+{
+  "name": "mubeyko/module-change-product-type",
+  "version": "1.0.0",
+  "description": "N/A",
+  "type": "magento2-module",
+  "require": {
+    "magento/framework": "*",
+    "magento/module-bundle": "101.0.*",
+    "magento/module-catalog": "104.0.*"
+  },
+  "license": [
+    "Proprietary"
+  ],
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Mubeyko\\ChangeProductType\\": ""
+    }
+  }
+}
