@@ -75,9 +75,10 @@ class SimpleToBundle extends Command
         try {
             $this->simpleToBundle->changeTypeToBundle($sku);
             $output->writeln('<info>Product type successfully changed.</info>');
+            return Cli::RETURN_SUCCESS;
         } catch (\Exception $exception) {
             $output->writeln("<error>{$exception->getMessage()}</error>");
+            return Cli::RETURN_FAILURE;
         }
-        return Cli::RETURN_SUCCESS;
     }
 }
